@@ -9,6 +9,7 @@ verify_ssl = true
 
 django = "*"
 "psycopg2" = "*"
+"autopep8" = "*"
 
 
 [dev-packages]
