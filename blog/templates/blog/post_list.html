@@ -1,4 +1,4 @@
-{% extends 'blog/base.html' %}
+{% extends 'blog/base.html' %} <-!  파일 확장 테그 ->
 
 {% block content %}
     {% for post in posts %}
@@ -7,7 +7,7 @@
                 {{ post.published_date }}
             </div>
             <h1>
-                <a href="">{{ post.title }}</a>
+                <a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a>
             </h1>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
